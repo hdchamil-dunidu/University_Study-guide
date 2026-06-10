@@ -12,7 +12,6 @@
 </head>
 <body>
 
-  <!-- ── NAV ── -->
   <header class="nav-wrap">
     <nav class="nav container">
       <a class="nav-logo" href="#">◈ Study Hub</a>
@@ -27,40 +26,44 @@
     </nav>
   </header>
 
-  <!-- ── HERO ── -->
   <section class="hero">
-    <div class="container hero-inner">
-      <span class="hero-eyebrow">Free Student Resources</span>
-      <h1 class="hero-title">Study Hub<br /><span class="accent">IT / SE</span></h1>
-      <p class="hero-sub">Mock exams, reference sheets &amp; revision notes — organised by year, semester, and module. Open quizzes online or download files for free.</p>
-      <div class="hero-actions">
-        <a href="#y1s2" class="btn btn-primary">Open Y1 Semester 2 →</a>
-        <a href="#resources" class="btn btn-ghost">View Resources</a>
+    <div class="container hero-inner" style="display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 2rem;">
+      
+      <div style="flex: 1; min-width: 300px;">
+        <span class="hero-eyebrow">Free Student Resources</span>
+        <h1 class="hero-title">Study Hub<br /><span class="accent">IT / SE</span></h1>
+        <p class="hero-sub">Mock exams, reference sheets &amp; revision notes — organised by year, semester, and module. Open quizzes online or download files for free.</p>
+        <div class="hero-actions">
+          <a href="#y1s2" class="btn btn-primary">Open Y1 Semester 2 →</a>
+          <a href="#resources" class="btn btn-ghost">View Resources</a>
+        </div>
+        <div class="hero-badge" style="margin-top: 2rem;">
+          <span class="dot"></span>
+          <span id="online-count">1</span> student online now
+        </div>
       </div>
-      <div class="hero-badge">
-        <span class="dot"></span>
-        <span id="online-count">1</span> student online now
+
+      <div class="profile-3d-container" style="flex: 1; min-width: 300px; display: flex; justify-content: center;">
+        <div class="profile-card" data-tilt>
+            <img src="assets/images/image_900446.png" alt="SLIIT Logo" class="sliit-logo">
+            
+            <img src="assets/images/DSC_8445.jpg" alt="Nilantha H.D.C.D" class="profile-img">
+            
+            <h2 class="profile-name">Nilantha H.D.C.D</h2>
+            <p class="profile-batch">Batch 12.02 (WD238)</p>
+            <p class="profile-role">IT Undergraduate Study Hub</p>
+        </div>
       </div>
-    </div>
-    <div class="hero-code-block">
-      <pre><code><span class="c-key">about</span> {
-  platform  : <span class="c-str">"Study Hub"</span>
-  batch     : <span class="c-str">"12.1 WD 222"</span>
-  semester  : <span class="c-str">"Year 1 Sem 2"</span>
-  access    : <span class="c-str">"free"</span>
-  purpose   : <span class="c-str">"revise faster"</span>
-}</code></pre>
+
     </div>
   </section>
 
-  <!-- ── NOTICE BANNER ── -->
   <div class="notice-banner">
     <span class="notice-icon">📢</span>
     <p>Join the <strong>WhatsApp channel</strong> to get notified when new mock exams and reference sheets are uploaded.</p>
     <a href="#" class="btn btn-sm">Join Channel</a>
   </div>
 
-  <!-- ── YEARS ── -->
   <section id="years" class="section">
     <div class="container">
       <span class="section-label">Academic Structure</span>
@@ -94,7 +97,6 @@
     </div>
   </section>
 
-  <!-- ── Y1S2 MODULES ── -->
   <section id="y1s2" class="section section-dark">
     <div class="container">
       <span class="section-label">Active Semester</span>
@@ -134,7 +136,6 @@
     </div>
   </section>
 
-  <!-- ── NOTICE ── -->
   <section class="section notice-section">
     <div class="container">
       <div class="notice-card">
@@ -158,14 +159,12 @@
     </div>
   </section>
 
-  <!-- ── RESOURCES ── -->
   <section id="resources" class="section section-dark">
     <div class="container">
       <span class="section-label">Resource Library</span>
       <h2 class="section-title">Year 1 Semester 2 — Resources</h2>
       <p class="section-sub">Open mock exams online or download reference sheets. Filter by module and type.</p>
 
-      <!-- Filters -->
       <div class="filters">
         <div class="filter-group">
           <button class="filter-btn active" data-filter="module" data-value="all">All Modules</button>
@@ -184,10 +183,8 @@
         </div>
       </div>
 
-      <!-- Resource Cards -->
       <div class="resources-grid" id="resources-grid">
-        <!-- Populated by JS — add your real resources in assets/js/resources.js -->
-      </div>
+        </div>
 
       <div class="empty-state" id="empty-state" style="display:none;">
         <span class="empty-icon">📭</span>
@@ -197,7 +194,6 @@
     </div>
   </section>
 
-  <!-- ── FEEDBACK ── -->
   <section id="feedback" class="section">
     <div class="container">
       <span class="section-label">Feedback</span>
@@ -240,7 +236,6 @@
     </div>
   </section>
 
-  <!-- ── CONTACT ── -->
   <section id="contact" class="section section-dark">
     <div class="container contact-wrap">
       <span class="section-label">Contact</span>
@@ -253,7 +248,6 @@
     </div>
   </section>
 
-  <!-- ── FOOTER ── -->
   <footer class="footer">
     <div class="container footer-inner">
       <span class="nav-logo">◈ Study Hub</span>
@@ -264,5 +258,15 @@
 
   <script src="assets/js/resources.js"></script>
   <script src="assets/js/main.js"></script>
+  
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.8.0/vanilla-tilt.min.js"></script>
+  <script>
+      VanillaTilt.init(document.querySelectorAll(".profile-card"), {
+          max: 15,          // Maximum tilt rotation (degrees)
+          speed: 400,       // Speed of the enter/exit transition
+          glare: true,      // Adds a light reflection to the glass
+          "max-glare": 0.3, // Opacity of the glare
+      });
+  </script>
 </body>
 </html>
