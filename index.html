@@ -10,74 +10,52 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet" />
 </head>
-<body>
+<body class="poster-page">
 
-<header class="nav-wrap">
-  <nav class="nav container">
-    <a class="nav-logo" href="#">◈ Study Hub</a>
-    <button class="nav-toggle" aria-label="Toggle menu">☰</button>
-    <ul class="nav-links">
-      <li><a href="#years">Years</a></li>
-      <li><a href="#y1s2">Y1 S2</a></li>
-      <li><a href="#resources">Resources</a></li>
-      <li><a href="#feedback">Feedback</a></li>
-      <li><a href="#contact">Contact</a></li>
-    </ul>
-  </nav>
-</header>
+<section class="editorial-poster-section" data-tilt data-tilt-max="3" data-tilt-perspective="1500" data-tilt-speed="400" data-tilt-glare="true" data-tilt-max-glare="0.1">
 
-<section class="hero editorial-hero">
-  <div class="container">
+  <div class="poster-canvas">
 
-    <div class="editorial-poster" data-tilt data-tilt-max="3" data-tilt-speed="400" data-tilt-perspective="1500" data-tilt-glare="true" data-tilt-max-glare="0.1">
+    <div class="poster-grid-pattern"></div>
 
-      <div class="giant-text">IT.STUDY</div>
+    <div class="giant-bg-text">IT<br>STUDY<br>GUIDE</div>
 
-      <img src="assets/images/DSC_8445.jpg" alt="Nilantha" class="poster-model">
+    <img src="assets/images/DSC_8445.jpg" alt="Curator Portrait" class="poster-character">
 
-      <div class="floating-badge">
-        <img src="assets/images/image_900446.png" alt="SLIIT Logo" class="sliit-logo-editorial">
-      </div>
+    <div class="poster-vertical-group poster-vertical-left">
+      <span class="vertical-item">2026 AUGUST 08</span>
+      <span class="vertical-item vertical-accent">CURATED STUDY RESOURCES</span>
+    </div>
 
-      <div class="poster-foreground">
-        <p class="poster-eyebrow">Creative & Technical // 2026</p>
-        <h1 class="poster-title">STUDY<br>HUB</h1>
+    <div class="poster-vertical-group poster-vertical-right">
+      <span class="vertical-item">CURATED BY</span>
+      <span class="vertical-item vertical-accent">NILANTHA H.D.C.D</span>
+    </div>
 
-        <div class="poster-credits">
-          <div class="credit-block">
-            <span class="credit-label">Curator</span>
-            <span class="credit-value">Nilantha H.D.C.D</span>
-          </div>
-          <div class="credit-block">
-            <span class="credit-label">Batch</span>
-            <span class="credit-value">12.02 (WD238)</span>
-          </div>
-          <div class="credit-block">
-            <span class="credit-label">Access</span>
-            <span class="credit-value">Free Resources</span>
-          </div>
-        </div>
+    <div class="poster-minimal-footer">
+      <p class="minimal-credit-list">FREE STUDENT ACCESS // Y1 S2 WD238 // LEARNING AID</p>
+      <p class="university-credit">THE KNOWLEDGE UNIVERSITY // SLIIT IT/SE</p>
+    </div>
 
-        <div class="poster-actions">
-          <a href="#y1s2" class="btn btn-primary">Explore Modules →</a>
-        </div>
-      </div>
+    <div class="poster-sliit-badge">
+      <img src="assets/images/image_900446.png" alt="SLIIT Logo" class="sliit-logo-editorial">
     </div>
 
   </div>
+
 </section>
 
-<div class="notice-banner">
-  <span class="notice-icon">📢</span>
-  <p>Join the <strong>WhatsApp channel</strong> to get notified when new mock exams and reference sheets are uploaded.</p>
-  <a href="#" class="btn btn-sm">Join Channel</a>
-</div>
+<main class="main-content">
 
-<section id="years" class="section">
-  <div class="container">
+  <div class="notice-banner container">
+    <span class="notice-icon">📢</span>
+    <p>Join the <strong>WhatsApp channel</strong> to get notified when new mock exams and reference sheets are uploaded.</p>
+    <a href="#" class="btn btn-sm">Join Channel</a>
+  </div>
+
+  <section id="years" class="section container">
     <span class="section-label">Academic Structure</span>
     <h2 class="section-title">Choose Your Year &amp; Semester</h2>
-    <p class="section-sub">Currently available: <strong>Year 1 Semester 2</strong>. Other years are prepared for future updates.</p>
     <div class="years-grid">
       <div class="year-card active">
         <span class="year-num">01</span>
@@ -103,18 +81,16 @@
         <span class="sem-tag coming">Coming Soon</span>
       </div>
     </div>
-  </div>
-</section>
+  </section>
 
-<section id="y1s2" class="section section-dark">
-  <div class="container">
+  <section id="y1s2" class="section section-dark container">
     <span class="section-label">Active Semester</span>
     <h2 class="section-title">Year 1 — Semester 2</h2>
     <div class="modules-grid">
       <a href="#resources" class="module-card" data-module="DSA">
         <div class="module-icon">⚡</div>
         <h3 class="module-code">DSA</h3>
-        <p class="module-name">Data Structures &amp; Algorithms</p>
+        <p class="module-name">Data Structures & Algorithm</p>
       </a>
       <a href="#resources" class="module-card" data-module="OOP">
         <div class="module-icon">🧩</div>
@@ -142,51 +118,20 @@
         <p class="module-name">Software Engineering</p>
       </a>
     </div>
-  </div>
-</section>
+  </section>
 
-<section id="resources" class="section section-dark">
-  <div class="container">
+  <section id="resources" class="section section-dark container">
     <span class="section-label">Resource Library</span>
-    <h2 class="section-title">Year 1 Semester 2 — Resources</h2>
-    <p class="section-sub">Open mock exams online or download reference sheets. Filter by module and type.</p>
+    <h2 class="section-title">Resource Library</h2>
+  </section>
 
-    <div class="filters">
-      <div class="filter-group">
-        <button class="filter-btn active" data-filter="module" data-value="all">All Modules</button>
-        <button class="filter-btn" data-filter="module" data-value="DSA">DSA</button>
-        <button class="filter-btn" data-filter="module" data-value="OOP">OOP</button>
-        <button class="filter-btn" data-filter="module" data-value="DM">DM</button>
-        <button class="filter-btn" data-filter="module" data-value="IS">IS</button>
-        <button class="filter-btn" data-filter="module" data-value="TW">TW</button>
-        <button class="filter-btn" data-filter="module" data-value="SE">SE</button>
-      </div>
-      <div class="filter-group">
-        <button class="filter-btn active" data-filter="type" data-value="all">All Types</button>
-        <button class="filter-btn" data-filter="type" data-value="mock">Mock Exam</button>
-        <button class="filter-btn" data-filter="type" data-value="ref">Reference Sheet</button>
-        <button class="filter-btn" data-filter="type" data-value="notes">Notes</button>
-      </div>
-    </div>
-
-    <div class="resources-grid" id="resources-grid">
-    </div>
-
-    <div class="empty-state" id="empty-state" style="display:none;">
-      <span class="empty-icon">📭</span>
-      <h3>No resources yet</h3>
-      <p>This module / type combination is prepared for future resources. Check back soon.</p>
-    </div>
-  </div>
-</section>
-
-<footer class="footer">
-  <div class="container footer-inner">
+  <footer class="footer container">
     <span class="nav-logo">◈ Study Hub</span>
     <p class="footer-note">Free resources for IT/SE students. Not an official university resource.</p>
     <a href="#" class="footer-top">↑ Back to top</a>
-  </div>
-</footer>
+  </footer>
+
+</main>
 
 <script src="assets/js/resources.js"></script>
 <script src="assets/js/main.js"></script>
