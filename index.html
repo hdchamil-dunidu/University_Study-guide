@@ -1,50 +1,3 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Study Hub — reference sheets, mock exams, and revision resources for IT/SE students." />
-  <title>Study Hub | IT/SE Students</title>
-  <link rel="stylesheet" href="assets/css/style.css" />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet" />
-</head>
-<body class="poster-page">
-
-<section class="editorial-poster-section" data-tilt data-tilt-max="3" data-tilt-perspective="1500" data-tilt-speed="400" data-tilt-glare="true" data-tilt-max-glare="0.1">
-
-  <div class="poster-canvas">
-
-    <div class="poster-grid-pattern"></div>
-
-    <div class="giant-bg-text">IT<br>STUDY<br>GUIDE</div>
-
-    <img src="assets/images/DSC_8445.jpg" alt="Curator Portrait" class="poster-character">
-
-    <div class="poster-vertical-group poster-vertical-left">
-      <span class="vertical-item">2026 AUGUST 08</span>
-      <span class="vertical-item vertical-accent">CURATED STUDY RESOURCES</span>
-    </div>
-
-    <div class="poster-vertical-group poster-vertical-right">
-      <span class="vertical-item">CURATED BY</span>
-      <span class="vertical-item vertical-accent">NILANTHA H.D.C.D</span>
-    </div>
-
-    <div class="poster-minimal-footer">
-      <p class="minimal-credit-list">FREE STUDENT ACCESS // Y1 S2 WD238 // LEARNING AID</p>
-      <p class="university-credit">THE KNOWLEDGE UNIVERSITY // SLIIT IT/SE</p>
-    </div>
-
-    <div class="poster-sliit-badge">
-      <img src="assets/images/image_900446.png" alt="SLIIT Logo" class="sliit-logo-editorial">
-    </div>
-
-  </div>
-
-</section>
-
 <main class="main-content">
 
   <div class="notice-banner container">
@@ -55,30 +8,36 @@
 
   <section id="years" class="section container">
     <span class="section-label">Academic Structure</span>
-    <h2 class="section-title">Choose Your Year &amp; Semester</h2>
-    <div class="years-grid">
-      <div class="year-card active">
-        <span class="year-num">01</span>
+    <h2 class="section-title">Choose Your Year</h2>
+
+    <div class="bento-grid years-bento">
+      <div class="bento-card bento-feature active">
+        <div class="bento-top">
+          <span class="year-num">01</span>
+          <span class="bento-status live">● Active</span>
+        </div>
         <h3>Year 1</h3>
+        <p class="bento-desc">Current foundational modules including DSA, OOP, and Discrete Math.</p>
         <div class="sem-tags">
           <span class="sem-tag coming">Semester 1 — Soon</span>
           <a href="#y1s2" class="sem-tag live">Semester 2 — Active ↓</a>
         </div>
       </div>
-      <div class="year-card">
+
+      <div class="bento-card bento-standard">
         <span class="year-num">02</span>
         <h3>Year 2</h3>
-        <span class="sem-tag coming">Coming Soon</span>
+        <span class="bento-status upcoming">Coming Soon</span>
       </div>
-      <div class="year-card">
+      <div class="bento-card bento-standard">
         <span class="year-num">03</span>
         <h3>Year 3</h3>
-        <span class="sem-tag coming">Coming Soon</span>
+        <span class="bento-status upcoming">Coming Soon</span>
       </div>
-      <div class="year-card">
+      <div class="bento-card bento-standard">
         <span class="year-num">04</span>
         <h3>Year 4</h3>
-        <span class="sem-tag coming">Coming Soon</span>
+        <span class="bento-status upcoming">Coming Soon</span>
       </div>
     </div>
   </section>
@@ -86,43 +45,87 @@
   <section id="y1s2" class="section section-dark container">
     <span class="section-label">Active Semester</span>
     <h2 class="section-title">Year 1 — Semester 2</h2>
-    <div class="modules-grid">
-      <a href="#resources" class="module-card" data-module="DSA">
-        <div class="module-icon">⚡</div>
-        <h3 class="module-code">DSA</h3>
-        <p class="module-name">Data Structures & Algorithm</p>
+
+    <div class="bento-grid modules-bento">
+
+      <a href="#resources" class="bento-card module-card bento-wide" data-module="DSA">
+        <div class="module-header">
+          <div class="module-icon-wrap"><span class="module-icon">⚡</span></div>
+          <span class="bento-arrow">↗</span>
+        </div>
+        <div class="module-content">
+          <h3 class="module-code">DSA</h3>
+          <p class="module-name">Data Structures & Algorithms</p>
+        </div>
       </a>
-      <a href="#resources" class="module-card" data-module="OOP">
-        <div class="module-icon">🧩</div>
-        <h3 class="module-code">OOP</h3>
-        <p class="module-name">Object-Oriented Programming</p>
+
+      <a href="#resources" class="bento-card module-card" data-module="OOP">
+        <div class="module-header">
+          <div class="module-icon-wrap"><span class="module-icon">🧩</span></div>
+          <span class="bento-arrow">↗</span>
+        </div>
+        <div class="module-content">
+          <h3 class="module-code">OOP</h3>
+          <p class="module-name">Object-Oriented Prog.</p>
+        </div>
       </a>
-      <a href="#resources" class="module-card" data-module="DM">
-        <div class="module-icon">∑</div>
-        <h3 class="module-code">DM</h3>
-        <p class="module-name">Discrete Mathematics</p>
+
+      <a href="#resources" class="bento-card module-card" data-module="DM">
+        <div class="module-header">
+          <div class="module-icon-wrap"><span class="module-icon">∑</span></div>
+          <span class="bento-arrow">↗</span>
+        </div>
+        <div class="module-content">
+          <h3 class="module-code">DM</h3>
+          <p class="module-name">Discrete Mathematics</p>
+        </div>
       </a>
-      <a href="#resources" class="module-card" data-module="IS">
-        <div class="module-icon">🗄</div>
-        <h3 class="module-code">IS</h3>
-        <p class="module-name">Information Systems</p>
+
+      <a href="#resources" class="bento-card module-card bento-wide" data-module="IS">
+        <div class="module-header">
+          <div class="module-icon-wrap"><span class="module-icon">🗄</span></div>
+          <span class="bento-arrow">↗</span>
+        </div>
+        <div class="module-content">
+          <h3 class="module-code">IS</h3>
+          <p class="module-name">Information Systems</p>
+        </div>
       </a>
-      <a href="#resources" class="module-card" data-module="TW">
-        <div class="module-icon">✍</div>
-        <h3 class="module-code">TW</h3>
-        <p class="module-name">Technical Writing</p>
+
+      <a href="#resources" class="bento-card module-card" data-module="TW">
+        <div class="module-header">
+          <div class="module-icon-wrap"><span class="module-icon">✍</span></div>
+          <span class="bento-arrow">↗</span>
+        </div>
+        <div class="module-content">
+          <h3 class="module-code">TW</h3>
+          <p class="module-name">Technical Writing</p>
+        </div>
       </a>
-      <a href="#resources" class="module-card" data-module="SE">
-        <div class="module-icon">🔧</div>
-        <h3 class="module-code">SE</h3>
-        <p class="module-name">Software Engineering</p>
+
+      <a href="#resources" class="bento-card module-card" data-module="SE">
+        <div class="module-header">
+          <div class="module-icon-wrap"><span class="module-icon">🔧</span></div>
+          <span class="bento-arrow">↗</span>
+        </div>
+        <div class="module-content">
+          <h3 class="module-code">SE</h3>
+          <p class="module-name">Software Engineering</p>
+        </div>
       </a>
+
     </div>
   </section>
 
   <section id="resources" class="section section-dark container">
     <span class="section-label">Resource Library</span>
     <h2 class="section-title">Resource Library</h2>
+
+    <div class="empty-state bento-card">
+      <span class="empty-icon">📭</span>
+      <h3>Select a module to view resources</h3>
+      <p>Mock exams and reference sheets will appear here.</p>
+    </div>
   </section>
 
   <footer class="footer container">
@@ -132,10 +135,3 @@
   </footer>
 
 </main>
-
-<script src="assets/js/resources.js"></script>
-<script src="assets/js/main.js"></script>
-
-<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.8.0/vanilla-tilt.min.js"></script>
-</body>
-</html>
