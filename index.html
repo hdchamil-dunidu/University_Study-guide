@@ -8,265 +8,189 @@
   <link rel="stylesheet" href="assets/css/style.css" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet" />
 </head>
 <body>
 
-  <header class="nav-wrap">
-    <nav class="nav container">
-      <a class="nav-logo" href="#">◈ Study Hub</a>
-      <button class="nav-toggle" aria-label="Toggle menu">☰</button>
-      <ul class="nav-links">
-        <li><a href="#years">Years</a></li>
-        <li><a href="#y1s2">Y1 S2</a></li>
-        <li><a href="#resources">Resources</a></li>
-        <li><a href="#feedback">Feedback</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-    </nav>
-  </header>
+<header class="nav-wrap">
+  <nav class="nav container">
+    <a class="nav-logo" href="#">◈ Study Hub</a>
+    <button class="nav-toggle" aria-label="Toggle menu">☰</button>
+    <ul class="nav-links">
+      <li><a href="#years">Years</a></li>
+      <li><a href="#y1s2">Y1 S2</a></li>
+      <li><a href="#resources">Resources</a></li>
+      <li><a href="#feedback">Feedback</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+</header>
 
-  <section class="hero">
-    <div class="container hero-inner" style="display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 2rem;">
-      
-      <div style="flex: 1; min-width: 300px;">
-        <span class="hero-eyebrow">Free Student Resources</span>
-        <h1 class="hero-title">Study Hub<br /><span class="accent">IT / SE</span></h1>
-        <p class="hero-sub">Mock exams, reference sheets &amp; revision notes — organised by year, semester, and module. Open quizzes online or download files for free.</p>
-        <div class="hero-actions">
-          <a href="#y1s2" class="btn btn-primary">Open Y1 Semester 2 →</a>
-          <a href="#resources" class="btn btn-ghost">View Resources</a>
-        </div>
-        <div class="hero-badge" style="margin-top: 2rem;">
-          <span class="dot"></span>
-          <span id="online-count">1</span> student online now
-        </div>
+<section class="hero editorial-hero">
+  <div class="container">
+
+    <div class="editorial-poster" data-tilt data-tilt-max="3" data-tilt-speed="400" data-tilt-perspective="1500" data-tilt-glare="true" data-tilt-max-glare="0.1">
+
+      <div class="giant-text">IT.STUDY</div>
+
+      <img src="assets/images/DSC_8445.jpg" alt="Nilantha" class="poster-model">
+
+      <div class="floating-badge">
+        <img src="assets/images/image_900446.png" alt="SLIIT Logo" class="sliit-logo-editorial">
       </div>
 
-      <div class="profile-3d-container" style="flex: 1; min-width: 300px; display: flex; justify-content: center;">
-        <div class="profile-card" data-tilt>
-            <img src="assets/images/image_900446.png" alt="SLIIT Logo" class="sliit-logo">
-            
-            <img src="assets/images/DSC_8445.jpg" alt="Nilantha H.D.C.D" class="profile-img">
-            
-            <h2 class="profile-name">Nilantha H.D.C.D</h2>
-            <p class="profile-batch">Batch 12.02 (WD238)</p>
-            <p class="profile-role">IT Undergraduate Study Hub</p>
+      <div class="poster-foreground">
+        <p class="poster-eyebrow">Creative & Technical // 2026</p>
+        <h1 class="poster-title">STUDY<br>HUB</h1>
+
+        <div class="poster-credits">
+          <div class="credit-block">
+            <span class="credit-label">Curator</span>
+            <span class="credit-value">Nilantha H.D.C.D</span>
+          </div>
+          <div class="credit-block">
+            <span class="credit-label">Batch</span>
+            <span class="credit-value">12.02 (WD238)</span>
+          </div>
+          <div class="credit-block">
+            <span class="credit-label">Access</span>
+            <span class="credit-value">Free Resources</span>
+          </div>
+        </div>
+
+        <div class="poster-actions">
+          <a href="#y1s2" class="btn btn-primary">Explore Modules →</a>
         </div>
       </div>
-
     </div>
-  </section>
 
-  <div class="notice-banner">
-    <span class="notice-icon">📢</span>
-    <p>Join the <strong>WhatsApp channel</strong> to get notified when new mock exams and reference sheets are uploaded.</p>
-    <a href="#" class="btn btn-sm">Join Channel</a>
   </div>
+</section>
 
-  <section id="years" class="section">
-    <div class="container">
-      <span class="section-label">Academic Structure</span>
-      <h2 class="section-title">Choose Your Year &amp; Semester</h2>
-      <p class="section-sub">Currently available: <strong>Year 1 Semester 2</strong>. Other years are prepared for future updates.</p>
-      <div class="years-grid">
-        <div class="year-card active">
-          <span class="year-num">01</span>
-          <h3>Year 1</h3>
-          <div class="sem-tags">
-            <span class="sem-tag coming">Semester 1 — Soon</span>
-            <a href="#y1s2" class="sem-tag live">Semester 2 — Active ↓</a>
-          </div>
-        </div>
-        <div class="year-card">
-          <span class="year-num">02</span>
-          <h3>Year 2</h3>
-          <span class="sem-tag coming">Coming Soon</span>
-        </div>
-        <div class="year-card">
-          <span class="year-num">03</span>
-          <h3>Year 3</h3>
-          <span class="sem-tag coming">Coming Soon</span>
-        </div>
-        <div class="year-card">
-          <span class="year-num">04</span>
-          <h3>Year 4</h3>
-          <span class="sem-tag coming">Coming Soon</span>
+<div class="notice-banner">
+  <span class="notice-icon">📢</span>
+  <p>Join the <strong>WhatsApp channel</strong> to get notified when new mock exams and reference sheets are uploaded.</p>
+  <a href="#" class="btn btn-sm">Join Channel</a>
+</div>
+
+<section id="years" class="section">
+  <div class="container">
+    <span class="section-label">Academic Structure</span>
+    <h2 class="section-title">Choose Your Year &amp; Semester</h2>
+    <p class="section-sub">Currently available: <strong>Year 1 Semester 2</strong>. Other years are prepared for future updates.</p>
+    <div class="years-grid">
+      <div class="year-card active">
+        <span class="year-num">01</span>
+        <h3>Year 1</h3>
+        <div class="sem-tags">
+          <span class="sem-tag coming">Semester 1 — Soon</span>
+          <a href="#y1s2" class="sem-tag live">Semester 2 — Active ↓</a>
         </div>
       </div>
-    </div>
-  </section>
-
-  <section id="y1s2" class="section section-dark">
-    <div class="container">
-      <span class="section-label">Active Semester</span>
-      <h2 class="section-title">Year 1 — Semester 2</h2>
-      <div class="modules-grid">
-        <a href="#resources" class="module-card" data-module="DSA">
-          <div class="module-icon">⚡</div>
-          <h3 class="module-code">DSA</h3>
-          <p class="module-name">Data Structures &amp; Algorithms</p>
-        </a>
-        <a href="#resources" class="module-card" data-module="OOP">
-          <div class="module-icon">🧩</div>
-          <h3 class="module-code">OOP</h3>
-          <p class="module-name">Object-Oriented Programming</p>
-        </a>
-        <a href="#resources" class="module-card" data-module="DM">
-          <div class="module-icon">∑</div>
-          <h3 class="module-code">DM</h3>
-          <p class="module-name">Discrete Mathematics</p>
-        </a>
-        <a href="#resources" class="module-card" data-module="IS">
-          <div class="module-icon">🗄</div>
-          <h3 class="module-code">IS</h3>
-          <p class="module-name">Information Systems</p>
-        </a>
-        <a href="#resources" class="module-card" data-module="TW">
-          <div class="module-icon">✍</div>
-          <h3 class="module-code">TW</h3>
-          <p class="module-name">Technical Writing</p>
-        </a>
-        <a href="#resources" class="module-card" data-module="SE">
-          <div class="module-icon">🔧</div>
-          <h3 class="module-code">SE</h3>
-          <p class="module-name">Software Engineering</p>
-        </a>
+      <div class="year-card">
+        <span class="year-num">02</span>
+        <h3>Year 2</h3>
+        <span class="sem-tag coming">Coming Soon</span>
+      </div>
+      <div class="year-card">
+        <span class="year-num">03</span>
+        <h3>Year 3</h3>
+        <span class="sem-tag coming">Coming Soon</span>
+      </div>
+      <div class="year-card">
+        <span class="year-num">04</span>
+        <h3>Year 4</h3>
+        <span class="sem-tag coming">Coming Soon</span>
       </div>
     </div>
-  </section>
+  </div>
+</section>
 
-  <section class="section notice-section">
-    <div class="container">
-      <div class="notice-card">
-        <h2>Free Study Resources For Revision Support</h2>
-        <p>These resources are created for study and revision support. They are free for students to use. Every effort is made to ensure accuracy, but there is no guarantee that every answer, explanation, or file is 100% correct. Please use them as a learning aid and always verify important points with your lecturer, official notes, or recommended materials.</p>
-        <div class="notice-pills">
-          <div class="notice-pill">
-            <span class="pill-icon">✅</span>
-            <div><strong>Free Access</strong><p>Use quizzes and reference sheets freely for learning and revision.</p></div>
-          </div>
-          <div class="notice-pill">
-            <span class="pill-icon">⚠️</span>
-            <div><strong>Not Official</strong><p>This is not an official university resource or lecturer-approved answer bank.</p></div>
-          </div>
-          <div class="notice-pill">
-            <span class="pill-icon">🔍</span>
-            <div><strong>Double-Check</strong><p>There may be mistakes — always verify important answers before exams.</p></div>
-          </div>
-        </div>
+<section id="y1s2" class="section section-dark">
+  <div class="container">
+    <span class="section-label">Active Semester</span>
+    <h2 class="section-title">Year 1 — Semester 2</h2>
+    <div class="modules-grid">
+      <a href="#resources" class="module-card" data-module="DSA">
+        <div class="module-icon">⚡</div>
+        <h3 class="module-code">DSA</h3>
+        <p class="module-name">Data Structures &amp; Algorithms</p>
+      </a>
+      <a href="#resources" class="module-card" data-module="OOP">
+        <div class="module-icon">🧩</div>
+        <h3 class="module-code">OOP</h3>
+        <p class="module-name">Object-Oriented Programming</p>
+      </a>
+      <a href="#resources" class="module-card" data-module="DM">
+        <div class="module-icon">∑</div>
+        <h3 class="module-code">DM</h3>
+        <p class="module-name">Discrete Mathematics</p>
+      </a>
+      <a href="#resources" class="module-card" data-module="IS">
+        <div class="module-icon">🗄</div>
+        <h3 class="module-code">IS</h3>
+        <p class="module-name">Information Systems</p>
+      </a>
+      <a href="#resources" class="module-card" data-module="TW">
+        <div class="module-icon">✍</div>
+        <h3 class="module-code">TW</h3>
+        <p class="module-name">Technical Writing</p>
+      </a>
+      <a href="#resources" class="module-card" data-module="SE">
+        <div class="module-icon">🔧</div>
+        <h3 class="module-code">SE</h3>
+        <p class="module-name">Software Engineering</p>
+      </a>
+    </div>
+  </div>
+</section>
+
+<section id="resources" class="section section-dark">
+  <div class="container">
+    <span class="section-label">Resource Library</span>
+    <h2 class="section-title">Year 1 Semester 2 — Resources</h2>
+    <p class="section-sub">Open mock exams online or download reference sheets. Filter by module and type.</p>
+
+    <div class="filters">
+      <div class="filter-group">
+        <button class="filter-btn active" data-filter="module" data-value="all">All Modules</button>
+        <button class="filter-btn" data-filter="module" data-value="DSA">DSA</button>
+        <button class="filter-btn" data-filter="module" data-value="OOP">OOP</button>
+        <button class="filter-btn" data-filter="module" data-value="DM">DM</button>
+        <button class="filter-btn" data-filter="module" data-value="IS">IS</button>
+        <button class="filter-btn" data-filter="module" data-value="TW">TW</button>
+        <button class="filter-btn" data-filter="module" data-value="SE">SE</button>
+      </div>
+      <div class="filter-group">
+        <button class="filter-btn active" data-filter="type" data-value="all">All Types</button>
+        <button class="filter-btn" data-filter="type" data-value="mock">Mock Exam</button>
+        <button class="filter-btn" data-filter="type" data-value="ref">Reference Sheet</button>
+        <button class="filter-btn" data-filter="type" data-value="notes">Notes</button>
       </div>
     </div>
-  </section>
 
-  <section id="resources" class="section section-dark">
-    <div class="container">
-      <span class="section-label">Resource Library</span>
-      <h2 class="section-title">Year 1 Semester 2 — Resources</h2>
-      <p class="section-sub">Open mock exams online or download reference sheets. Filter by module and type.</p>
-
-      <div class="filters">
-        <div class="filter-group">
-          <button class="filter-btn active" data-filter="module" data-value="all">All Modules</button>
-          <button class="filter-btn" data-filter="module" data-value="DSA">DSA</button>
-          <button class="filter-btn" data-filter="module" data-value="OOP">OOP</button>
-          <button class="filter-btn" data-filter="module" data-value="DM">DM</button>
-          <button class="filter-btn" data-filter="module" data-value="IS">IS</button>
-          <button class="filter-btn" data-filter="module" data-value="TW">TW</button>
-          <button class="filter-btn" data-filter="module" data-value="SE">SE</button>
-        </div>
-        <div class="filter-group">
-          <button class="filter-btn active" data-filter="type" data-value="all">All Types</button>
-          <button class="filter-btn" data-filter="type" data-value="mock">Mock Exam</button>
-          <button class="filter-btn" data-filter="type" data-value="ref">Reference Sheet</button>
-          <button class="filter-btn" data-filter="type" data-value="notes">Notes</button>
-        </div>
-      </div>
-
-      <div class="resources-grid" id="resources-grid">
-        </div>
-
-      <div class="empty-state" id="empty-state" style="display:none;">
-        <span class="empty-icon">📭</span>
-        <h3>No resources yet</h3>
-        <p>This module / type combination is prepared for future resources. Check back soon.</p>
-      </div>
+    <div class="resources-grid" id="resources-grid">
     </div>
-  </section>
 
-  <section id="feedback" class="section">
-    <div class="container">
-      <span class="section-label">Feedback</span>
-      <h2 class="section-title">Found a Mistake? Tell Me Here</h2>
-      <p class="section-sub">If a quiz answer is wrong, a link is broken, or a reference sheet has an issue, send feedback. It will be checked and updated when possible.</p>
-      <form class="feedback-form" id="feedback-form">
-        <div class="form-row">
-          <div class="form-group">
-            <label for="fb-module">Module</label>
-            <select id="fb-module" required>
-              <option value="" disabled selected>Select module</option>
-              <option>DSA</option>
-              <option>OOP</option>
-              <option>DM</option>
-              <option>IS</option>
-              <option>TW</option>
-              <option>SE</option>
-              <option>Other</option>
-            </select>
-          </div>
-          <div class="form-group">
-            <label for="fb-type">Feedback Type</label>
-            <select id="fb-type" required>
-              <option value="" disabled selected>Select type</option>
-              <option>Wrong Answer</option>
-              <option>Broken Link</option>
-              <option>File Issue</option>
-              <option>Suggestion</option>
-              <option>Other</option>
-            </select>
-          </div>
-        </div>
-        <div class="form-group">
-          <label for="fb-message">Your Feedback</label>
-          <textarea id="fb-message" rows="4" placeholder="Describe the issue or suggestion..." required></textarea>
-        </div>
-        <button type="submit" class="btn btn-primary">Send Feedback →</button>
-        <p class="form-note" id="form-success" style="display:none;">✅ Thanks! Feedback received.</p>
-      </form>
+    <div class="empty-state" id="empty-state" style="display:none;">
+      <span class="empty-icon">📭</span>
+      <h3>No resources yet</h3>
+      <p>This module / type combination is prepared for future resources. Check back soon.</p>
     </div>
-  </section>
+  </div>
+</section>
 
-  <section id="contact" class="section section-dark">
-    <div class="container contact-wrap">
-      <span class="section-label">Contact</span>
-      <h2 class="section-title">Need Help or Found a Mistake?</h2>
-      <p class="section-sub">Study Hub is created for students to revise and learn faster. If you find a wrong answer, broken link, or missing resource, reach out.</p>
-      <div class="contact-links">
-        <a href="mailto:your@email.com" class="contact-btn">✉ Email</a>
-        <a href="https://wa.me/94XXXXXXXXX" class="contact-btn">💬 WhatsApp</a>
-      </div>
-    </div>
-  </section>
+<footer class="footer">
+  <div class="container footer-inner">
+    <span class="nav-logo">◈ Study Hub</span>
+    <p class="footer-note">Free resources for IT/SE students. Not an official university resource.</p>
+    <a href="#" class="footer-top">↑ Back to top</a>
+  </div>
+</footer>
 
-  <footer class="footer">
-    <div class="container footer-inner">
-      <span class="nav-logo">◈ Study Hub</span>
-      <p class="footer-note">Free resources for IT/SE students. Not an official university resource.</p>
-      <a href="#" class="footer-top">↑ Back to top</a>
-    </div>
-  </footer>
+<script src="assets/js/resources.js"></script>
+<script src="assets/js/main.js"></script>
 
-  <script src="assets/js/resources.js"></script>
-  <script src="assets/js/main.js"></script>
-  
-  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.8.0/vanilla-tilt.min.js"></script>
-  <script>
-      VanillaTilt.init(document.querySelectorAll(".profile-card"), {
-          max: 15,          // Maximum tilt rotation (degrees)
-          speed: 400,       // Speed of the enter/exit transition
-          glare: true,      // Adds a light reflection to the glass
-          "max-glare": 0.3, // Opacity of the glare
-      });
-  </script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.8.0/vanilla-tilt.min.js"></script>
 </body>
 </html>
