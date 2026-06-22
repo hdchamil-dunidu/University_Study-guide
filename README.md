@@ -1,4 +1,4 @@
-# Study Hub — Setup Guide::
+# Study Hub — Setup Guide:: >>
 
 A clean study resource hub for IT/SE students (Y1S2: DSA, OOP, DM, IS, TW, SE).
 
