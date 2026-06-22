@@ -42,7 +42,7 @@ Option 1 — GitHub Pages (recommended)**
 2. Go to Settings → Pages → Source: main branch / root
 3. Your site: `https://yourusername.github.io/studyhub`
 
-**Option 2 — Netlify**
+**Option 2 — Netlify
 1. Drag and drop the folder at netlify.com/drop
 2. Instant live URL
 
