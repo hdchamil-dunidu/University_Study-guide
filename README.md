@@ -37,7 +37,7 @@ Open `assets/js/resources.js` and add an entry to the `RESOURCES` array:
 
 ## How to Host (Free)
 
-**Option 1 — GitHub Pages (recommended)**
+Option 1 — GitHub Pages (recommended)**
 1. Push this folder to a GitHub repo
 2. Go to Settings → Pages → Source: main branch / root
 3. Your site: `https://yourusername.github.io/studyhub`
